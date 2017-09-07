@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1770AB571F2F339100E52ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770AB561F2F339100E52ADD /* AppDelegate.swift */; };
-		1770AB591F2F339100E52ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770AB581F2F339100E52ADD /* ViewController.swift */; };
 		1770AB5C1F2F339100E52ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770AB5A1F2F339100E52ADD /* Main.storyboard */; };
 		1770AB5E1F2F339100E52ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1770AB5D1F2F339100E52ADD /* Assets.xcassets */; };
 		1770AB611F2F339100E52ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1770AB5F1F2F339100E52ADD /* LaunchScreen.storyboard */; };
+		7FD55EE459BCAED88997D757 /* Pods_VOME.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887689FBE5D2678CE4EEC720 /* Pods_VOME.framework */; };
+		9B238EC71F60F84500A7AC96 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B238EC51F60F84500A7AC96 /* APIManager.swift */; };
+		9B238EC81F60F84500A7AC96 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B238EC61F60F84500A7AC96 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13A11EAC2FD024BC32C85843 /* Pods-VOME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOME.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOME/Pods-VOME.release.xcconfig"; sourceTree = "<group>"; };
 		1770AB531F2F339100E52ADD /* VOME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1770AB561F2F339100E52ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1770AB581F2F339100E52ADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1770AB5B1F2F339100E52ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1770AB5D1F2F339100E52ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1770AB601F2F339100E52ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1770AB621F2F339100E52ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A606148C21CDE0E8C73E06 /* Pods-VOME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOME.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOME/Pods-VOME.debug.xcconfig"; sourceTree = "<group>"; };
+		887689FBE5D2678CE4EEC720 /* Pods_VOME.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOME.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B238EC51F60F84500A7AC96 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9B238EC61F60F84500A7AC96 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD55EE459BCAED88997D757 /* Pods_VOME.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1770AB551F2F339100E52ADD /* VOME */,
 				1770AB541F2F339100E52ADD /* Products */,
+				C4A94646EAAA9B72A3AD8A3E /* Pods */,
+				2200DC5657157D6E373E2D18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,96 @@
 		1770AB551F2F339100E52ADD /* VOME */ = {
 			isa = PBXGroup;
 			children = (
+				9B238EC01F60F55000A7AC96 /* Classes */,
+				9B238EBF1F60F52800A7AC96 /* Storyboard */,
+				9B238EBD1F60F4E300A7AC96 /* AppDelegate */,
+				9B238EBE1F60F4FF00A7AC96 /* Resources */,
+			);
+			path = VOME;
+			sourceTree = "<group>";
+		};
+		2200DC5657157D6E373E2D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				887689FBE5D2678CE4EEC720 /* Pods_VOME.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B238EBD1F60F4E300A7AC96 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				1770AB561F2F339100E52ADD /* AppDelegate.swift */,
-				1770AB581F2F339100E52ADD /* ViewController.swift */,
-				1770AB5A1F2F339100E52ADD /* Main.storyboard */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9B238EBE1F60F4FF00A7AC96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1770AB5D1F2F339100E52ADD /* Assets.xcassets */,
 				1770AB5F1F2F339100E52ADD /* LaunchScreen.storyboard */,
 				1770AB621F2F339100E52ADD /* Info.plist */,
 			);
-			path = VOME;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9B238EBF1F60F52800A7AC96 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1770AB5A1F2F339100E52ADD /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		9B238EC01F60F55000A7AC96 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9B238EC41F60F71E00A7AC96 /* Defines */,
+				9B238EC31F60F71400A7AC96 /* Utility */,
+				9B238EC21F60F58000A7AC96 /* Controller */,
+				9B238EC11F60F57000A7AC96 /* Network */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9B238EC11F60F57000A7AC96 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9B238EC61F60F84500A7AC96 /* NetworkManager.swift */,
+				9B238EC51F60F84500A7AC96 /* APIManager.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		9B238EC21F60F58000A7AC96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B238EC31F60F71400A7AC96 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		9B238EC41F60F71E00A7AC96 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		C4A94646EAAA9B72A3AD8A3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38A606148C21CDE0E8C73E06 /* Pods-VOME.debug.xcconfig */,
+				13A11EAC2FD024BC32C85843 /* Pods-VOME.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1770AB651F2F339100E52ADD /* Build configuration list for PBXNativeTarget "VOME" */;
 			buildPhases = (
+				8ECC803D903590C602CDA80F /* [CP] Check Pods Manifest.lock */,
 				1770AB4F1F2F339100E52ADD /* Sources */,
 				1770AB501F2F339100E52ADD /* Frameworks */,
 				1770AB511F2F339100E52ADD /* Resources */,
+				2BF63828EB18CDB53AC769F6 /* [CP] Embed Pods Frameworks */,
+				B187722102F24C233083C66F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +225,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BF63828EB18CDB53AC769F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOME/Pods-VOME-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ECC803D903590C602CDA80F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B187722102F24C233083C66F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOME/Pods-VOME-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1770AB4F1F2F339100E52ADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1770AB591F2F339100E52ADD /* ViewController.swift in Sources */,
+				9B238EC81F60F84500A7AC96 /* NetworkManager.swift in Sources */,
+				9B238EC71F60F84500A7AC96 /* APIManager.swift in Sources */,
 				1770AB571F2F339100E52ADD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +399,7 @@
 		};
 		1770AB661F2F339100E52ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A606148C21CDE0E8C73E06 /* Pods-VOME.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -269,6 +413,7 @@
 		};
 		1770AB671F2F339100E52ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A11EAC2FD024BC32C85843 /* Pods-VOME.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -299,6 +444,7 @@
 				1770AB671F2F339100E52ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
